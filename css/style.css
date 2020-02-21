@@ -1,0 +1,376 @@
+#topnav {
+  background-color: #15212a;
+  color: #fff;
+  padding-top: 5px;
+}
+
+#topnav .left .fs {
+  padding: 2px 5px;
+  background-color: #ee5586;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+#topnav .left .ss {
+  font-size: 13px;
+  color: #bcbcbc;
+}
+
+#topnav .left .ss a {
+  color: #c9c920;
+}
+
+#topnav .right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style: none;
+}
+
+#topnav .right ul li {
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #bcbcbc;
+}
+
+#topnav .right ul li:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #topnav {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #topnav .left {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  #topnav .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+#mynavbar {
+  background: transparent;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+#mynavbar .hidden-bar {
+  display: none;
+}
+
+#mynavbar .fmenu > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  color: #fff;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#mynavbar .fmenu > ul .fli {
+  padding: 0 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+#mynavbar .fmenu > ul .fli .phonemenu {
+  display: none;
+}
+
+#mynavbar .fmenu > ul .fli:hover .altmenu1,
+#mynavbar .fmenu > ul .fli:hover .altmenu2,
+#mynavbar .fmenu > ul .fli:hover .altmenu3,
+#mynavbar .fmenu > ul .fli:hover .altmenu4 {
+  visibility: visible;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu1 {
+  position: absolute;
+  top: 245%;
+  left: 0;
+  min-width: 200px;
+  background-color: #fff;
+  border-radius: 10px;
+  visibility: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu1 > ul {
+  list-style: none;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu1 > ul > li {
+  color: #363636;
+  padding: 10px 0;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu1 > ul > li:hover {
+  color: #ee5586;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu2 {
+  position: absolute;
+  top: 245%;
+  left: 0;
+  min-width: 350px;
+  background-color: #fff;
+  border-radius: 10px;
+  visibility: hidden;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu2 > ul {
+  list-style: none;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu2 > ul > li {
+  color: #000;
+  padding-top: 10px;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu2 > ul > li img {
+  width: 50px;
+  height: 50px;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu2 > ul > li span {
+  padding-left: 10px;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu2 > ul > li span a {
+  font-size: 14px;
+  color: #000;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu2 > ul > li span a:hover {
+  color: #ee5586;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu2 > ul > li span p {
+  font-size: 12px;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu3 {
+  position: absolute;
+  top: 245%;
+  right: -200px;
+  min-width: 1000px;
+  background-color: #fff;
+  border-radius: 10px;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: .2s;
+  transition: .2s;
+  color: #000;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu3 .f-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu3 .f-left li {
+  padding: 8px 0;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu3 .f-left li:hover {
+  color: #ee5586;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu3 .f-left .top {
+  padding: 10px 0;
+  border-bottom: 1px solid grey;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu3 .f-right {
+  padding: 20px;
+  background-color: #fdd700;
+  width: 250px;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  color: #000;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu3 .f-right .fp {
+  padding: 5px 0;
+  color: grey;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu3 .f-right h5 {
+  padding-bottom: 5px;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu3 .f-right button {
+  background-color: #ee5586;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: none;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu3 .f-right button:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  background-color: grey;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+#mynavbar .fmenu > ul .fli .altmenu4 {
+  position: absolute;
+  top: 245%;
+  left: 0;
+  min-width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  visibility: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu4 ul {
+  list-style: none;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu4 ul li {
+  color: #000;
+  padding: 10px;
+}
+
+#mynavbar .fmenu > ul .fli .altmenu4 ul li:hover {
+  color: #ee5586;
+}
+
+#mynavbar .fmenu > ul .fli > span {
+  padding: 2px 6px;
+  background-color: #a5215e;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#mynavbar .fmenu > ul button {
+  font-size: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: yellow;
+  -webkit-transition: .6s;
+  transition: .6s;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+
+#mynavbar .fmenu > ul button:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  color: #fff;
+  background-color: grey;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  #mynavbar .hidden-bar {
+    display: block;
+  }
+  #mynavbar .hidden-bar i {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  #mynavbar .fmenu {
+    width: 100%;
+    height: 90vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #15212a;
+  }
+  #mynavbar .fmenu.active {
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #mynavbar .fmenu ul {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: block;
+    text-align: center;
+  }
+  #mynavbar .fmenu ul button {
+    margin-top: 20px;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 15px;
+  }
+  #mynavbar .fmenu ul .fli {
+    padding: 20px 0;
+    font-size: 25px;
+    font-weight: 500;
+    color: grey;
+    position: relative;
+  }
+  #mynavbar .fmenu ul .fli:hover {
+    color: #fdd700;
+  }
+  #mynavbar .fmenu ul .fli:hover #alt-menu {
+    display: none;
+  }
+  #mynavbar .fmenu ul .fli #alt-menu {
+    display: none;
+  }
+  #mynavbar .fmenu ul .phonemenu {
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    background-color: #15212a;
+    width: 300px;
+    height: 220px;
+    z-index: 10;
+    list-style: none;
+  }
+  #mynavbar .fmenu ul .phonemenu.active {
+    display: block;
+  }
+  #mynavbar .fmenu ul .phonemenu > li {
+    font-size: 15px;
+    color: grey;
+    padding: 8px 0;
+  }
+  #mynavbar .fmenu ul .phonemenu > li:hover {
+    color: #fdd700;
+  }
+}
+/*# sourceMappingURL=style.css.map */
